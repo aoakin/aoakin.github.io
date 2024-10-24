@@ -1,0 +1,13 @@
+/* Import Computer Modern Sans */
+@import url(https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css);
+
+body {
+    background-color: thistle;
+    color: black;
+    font-family: "Computer Modern Sans", sans-serif;
+    font-size: 16pt;
+}
+
+.Big_heading {
+    font-size: calc(1em + 4pt);
+}
