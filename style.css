@@ -8,6 +8,8 @@ body {
     font-size: 16pt;
 }
 
-.Big_heading {
+.big_heading {
     font-size: calc(1em + 4pt);
 }
+
+/* .little_heading */
