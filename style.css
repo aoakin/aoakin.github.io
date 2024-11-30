@@ -1,15 +1,102 @@
-/* Import Computer Modern Sans */
-@import url(https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css);
+/* Import Fira Code font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    background-color: thistle;
+    font-size: 24;
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+    justify-content: center;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+code {
+    font-family: /*'Comic Sans MS',*/ 'Fira Code', Monaco, 'Courier New', Courier, monospace;
+    font-weight: 550;
+    font-size: 90%;
+    color: blue;
+    text-decoration:underline rgba(255,0,255,0.25) 5px;
+    text-decoration-skip-ink: none;
+    /* border: solid red 1px; */
+    /* text-decoration: solid underline rgba(194, 36, 97, 0.5) 2px; */
+    /* text-decoration-skip-ink: none; */
+}
+a:link{
     color: black;
-    font-family: "Computer Modern Sans", sans-serif;
-    font-size: 16pt;
+}
+/* a:hover {
+    text-decoration: overline underline rgb(153, 87, 200) wavy;
+} */
+a:visited{
+    color: inherit;
+}
+.center {
+    text-align: center;
 }
 
-.big_heading {
-    font-size: calc(1em + 4pt);
+.Name {
+    font-size: 180%;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.25em;
+    
 }
 
-/* .little_heading */
+.MainPhoto {
+    text-align: center;
+    img {
+        max-width:75%;
+        /* max-height:50%;  */
+    }
+}
+
+
+
+.SummaryNav {
+    text-align: center;
+}
+
+.ProjectName {
+    font-weight: bold;
+    font-size: 110%;
+    font-style: italic;;
+    margin-bottom: 0.25em;
+}
+.ProjectDescription {
+    ul {list-style-type: "> "}
+}
+
+.un {
+    display: inline-block;
+    padding-bottom:2px;
+    /* background-image: linear-gradient(#7e264e 0 0); */
+    background-image: linear-gradient(to right, magenta 0, blue 100%);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+  }
+  
+  .un:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 3px;
+  }
+
+.CodeOutBox {
+    border: black 2px;
+    text-align: center;    
+}
+py-script {
+    font-family: /*'Comic Sans MS',*/ 'Fira Code', Monaco, 'Courier New', Courier, monospace;
+    font-size: 80%;
+    color: blue;
+    border: black 2px;
+}
+
+.space { margin-top: 300px; }
