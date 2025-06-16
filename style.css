@@ -16,7 +16,7 @@ div {
 code {
     font-family: /*'Comic Sans MS',*/ 'Fira Code', Monaco, 'Courier New', Courier, monospace;
     font-weight: 550;
-    font-size: 90%;
+    font-size: 85%;
     color: blue;
     /* text-decoration:underline rgba(255,0,255,0.25) 5px; */
     text-decoration-skip-ink: none;
@@ -47,13 +47,41 @@ a:visited{
     
 }
 
+.MyWarning {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+span.blockspam {
+  display: none;
+}
+
+.PortfolioItem {
+    img {
+        max-width:60%;
+        pointer-events: none;
+        /* max-height:50%;  */
+        border: 3px solid;
+    }
+}
+
 .MainPhoto {
     text-align: center;
     img {
         max-width:75%;
+        pointer-events: none;
         /* max-height:50%;  */
+        border: 3px solid;
     }
+    font-size: 80%;
 }
+
+.ImageBorder {
+    border-width: 10px;
+    border-color: red;
+}
+
 
 
 
@@ -71,11 +99,24 @@ a:visited{
     ul {list-style-type: "> "}
 }
 
+.FunName {
+    font-weight: bold;
+    font-size: 110%;
+    font-style: italic;;
+    margin-bottom: 0.25em;
+}
+.FunDescription {
+    font-size: 85%;
+    ul {list-style-type: "◆ ";}
+    /* ul span {vertical-align: middle;} */
+    /* ul li::marker {font-size: 125%}; */
+}
+
 .un {
     display: inline-block;
     padding-bottom:2px;
     /* background-image: linear-gradient(#7e264e 0 0); */
-    background-image: linear-gradient(to right, magenta 0, blue 100%);
+    background-image: linear-gradient(to right, white 0, red 20%, magenta 50%, blue 80%, white 100%);
     background-position: 0 100%; /*OR bottom left*/
     background-size: 0% 4px;
     background-repeat: no-repeat;
